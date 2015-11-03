@@ -1,0 +1,213 @@
+@import "./_normalize";
+@import "./common";
+
+$searchWidth: 38px;
+$douColor: #072;
+$lowDouColor: #15BA45;
+$hoverDouColor: #32c75d;
+
+.search-wrap {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+
+    .search-group {
+        width: 100%;
+        height: $searchWidth;
+
+        input {
+            width: 80%;
+            height: 100%;
+            padding: 5px 10px;
+            border: 2px solid $lowDouColor;
+            border-right: 0;
+            color: $douColor;
+            vertical-align: middle;
+        }
+        button {
+            width: 20%;
+            height: 100%;
+            background-color: $lowDouColor;
+            color: #fff;
+            vertical-align: middle;
+        }
+        button:active,
+        button:hover  {
+            background: $hoverDouColor;
+        }
+
+    }
+
+}
+
+.list-wrap {
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 800px;
+
+    h1 {
+        font-size: 16px;
+        font-weight: normal;
+        color: $douColor;
+        padding-left: 10px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .detail {
+        li {
+            width: 33.3333333%;
+            float: left;
+            padding: 0px 10px;
+            cursor: pointer;
+            min-height: 210px;
+
+            img {
+                width: 100%;
+                min-height: 120px;
+                background: #9ea19d;
+                max-height: 320px
+            }
+
+            .bottom {
+                text-align: center;
+                h2 {
+                    color: $douColor;
+                    font-size: 14px;
+                    font-weight: normal;
+                    display: inline;
+                }
+                .score {
+                    font-size: 13px;
+                    color: #e09015;
+                    margin-left: 2px;
+                }
+            }
+        }
+    }
+
+    .no-find {
+        text-align: center;
+        line-height: 100px;
+        color: red;
+    }
+}
+
+.detail-wrap {
+    padding: 30px;
+    padding-top: 30px;
+
+    .til {
+        .left,.right {
+            width: 50%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .left {
+            padding-right: 20px;
+        }
+        .right {
+            text-align: center;
+
+            h1 {
+                line-height: 50px;
+                font-size: 19px;
+                font-weight: normal;
+            }
+
+            .score {
+                line-height: 24px;
+                font-size: 16px;
+                color: #e09015;
+            }
+        }
+    }
+
+    .v {
+        line-height: 40px;
+        font-size: 16px;
+
+        span {
+            color: #3c3c3c;
+        }
+    }
+
+    .report {
+        .tag {
+            font-size: 15px;
+            color: $douColor;
+            line-height: 33px;
+        }
+        .title {
+            font-size: 15px;
+            line-height: 25px;
+        }
+    }
+
+    .imgGroup {
+        width: 100%;
+        margin-top: 30px;
+
+        img {
+            width: 25%;
+            padding-right: 10px;
+            float: left;
+            background: #fff;
+            min-height: 50px;
+        }
+    }
+}
+
+
+
+
+
+.loading {
+    .spinner {
+      margin: 100px auto;
+      width: 50px;
+      height: 60px;
+      text-align: center;
+      font-size: 10px;
+    }
+    .spinner > div {
+      background-color: #67CF22;
+      height: 100%;
+      width: 6px;
+      display: inline-block;
+      margin: 0 2px;
+      -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+      animation: stretchdelay 1.2s infinite ease-in-out;
+    }
+    .spinner .rect2 {
+      -webkit-animation-delay: -1.1s;
+      animation-delay: -1.1s;
+    }
+    .spinner .rect3 {
+      -webkit-animation-delay: -1.0s;
+      animation-delay: -1.0s;
+    }
+    .spinner .rect4 {
+      -webkit-animation-delay: -0.9s;
+      animation-delay: -0.9s;
+    }
+    .spinner .rect5 {
+      -webkit-animation-delay: -0.8s;
+      animation-delay: -0.8s;
+    }
+    @-webkit-keyframes stretchdelay {
+      0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
+      20% { -webkit-transform: scaleY(1.0) }
+    }
+    @keyframes stretchdelay {
+      0%, 40%, 100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+      }  20% {
+        transform: scaleY(1.0);
+        -webkit-transform: scaleY(1.0);
+      }
+    }
+}

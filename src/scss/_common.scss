@@ -1,0 +1,50 @@
+* {
+	font-family: "微软雅黑",华文细黑,STHeiti,MingLiu;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+body{
+	minheight:101%;
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{
+	margin:0;
+	padding:0;
+}
+ol,li{
+	list-style:none;
+}
+input,button,select,textarea{
+	outline:none
+}
+a:link,a:hover{
+	text-decoration:none;
+}
+a:visited,a:active{
+	text-decoration:none;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+	display:inline;
+}
+.cf {
+	clear: both;
+}
+.clearfix:before,
+.clearfix:after{
+	content:"";
+	display:table;
+}
+.clearfix:after{
+	clear:both;
+	overflow:hidden;
+}
+button {
+	border: 0;
+}
+body {
+    width: 100%;
+}
